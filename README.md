@@ -1,6 +1,6 @@
-#QuickBooks.Com
-This project was done for the Year 1 Semester 2, Internet and Web Technologies Module.
-
+# QuickBooks.Com
+### This project was done for the Year 1 Semester 2, Internet and Web Technologies Module.
+<br>
 Topic : Online-Movie-Booking-System Id : Sri Lanka Institute of Information Technology (SLIIT) 
 
 
