@@ -1,0 +1,207 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/*Whole Document */
+body{
+    font-family:sans-serif;
+    height: 90vh;
+    background: #161f28;
+    background-size: cover;
+}
+
+/* Our Team */
+.Payment-Successful{
+    overflow: hidden;
+    text-align:center;
+    padding: 60px;
+}
+
+/* Heading */
+.Payment-Successful h1{
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color : #fbfbfb;
+    font-size: 40px;
+}
+
+.Payment-Successful h2{
+    text-transform:capitalize;
+    margin-bottom: 40px;
+    color : #fbfbfb;
+    font-size: 30px;
+}
+
+.bdr1{
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 3px;
+    background-color:#fbfbfb;
+    margin-bottom: 40px;
+}
+
+/*Images */
+.pic{
+    margin-bottom: 40px;
+}
+
+.pic a{
+    display: inline-block;
+    border: #b6142c solid 2px;
+    
+    margin: 0 10px;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+}
+
+.pic a img{
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(8px 8px 10px #fbfbfb);
+    transition: all 0.4s;
+}
+
+.pic a:hover > img{
+    filter: none;
+}
+
+.pic a:hover{
+    transform: rotate(-10deg);
+}
+
+/* Description */
+
+.desc{
+    width: 600px;
+    margin: auto;
+    background: linear-gradient(45deg, #161f28, #b6142c);
+    font-size: 18px;
+    font-weight: lighter;
+    color: #fbfbfb;
+    text-align: justify;
+    overflow: hidden;
+    height: 0;
+}
+
+.desc:target{
+    height: auto;
+    padding :40px;
+    transition: all 0.3s ease-in;
+}
+
+.name, .social{
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in;
+}
+
+.social i{
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.social i:hover{
+    color: #fbfbfb;
+    transform: translate(-3px);
+}
+
+.Feedback{
+    color:#fbfbfb;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.btn{
+   
+    width: 40%;
+    background:linear-gradient(45deg, #161f28, #b6142c);
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50px 20px;
+    color:#fbfbfb;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.btn:hover{
+    letter-spacing: 2px;
+    opacity:0.8;
+}
+
+/* Bottom div */
+.bdr2{
+    width: 20%;
+    margin:  20px auto;
+    height: 5px;
+    background-color:#fbfbfb;
+}
+
+/* Responsive */
+@media(max-width:1200px){
+    /* Whole Document */
+    body{
+        height: 120vh;
+    }
+}
+
+@media(max-width:800px){
+    /* Whole Document */
+    body{
+        height: 150vh;
+    }
+
+    /*Description */
+    .desc{
+        width: 400px;
+    }
+}
+
+
+@media(max-width:600px){
+    /* Whole Document */
+
+    /*Description */
+    .desc{
+        width: 300px;
+        font-size: 14px;
+    }
+
+    .name, .socail{
+        font-size: 18px;
+    }
+
+    .Feedback{
+        width:150px;
+
+    }
+}
+
+@media(max-width:500px){
+    /* Whole Document */
+    body{
+        height: 180vh;
+    }
+    /*Description */
+    .desc{
+        width: 200px;
+
+    }
+}
+
+@media(max-width:400px){
+    
+    /*Description */
+    .desc{
+        width: 160px;
+        font-size: 12px;
+
+    }
+}

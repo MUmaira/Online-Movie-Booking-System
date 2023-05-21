@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #161f28;
+  color: #fbfbfb;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*movies*/
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  margin-top: 3rem;
+}
+
+h2 {
+  margin-top: 5rem;
+}
+
+section {
+  margin: 2rem auto 6rem;
+  width: 80%;
+}
+
+.search {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.search input {
+  padding: 0.5rem 3rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  opacity: 0.1;
+}
+
+.search i {
+  position: absolute;
+  top: 0.8rem;
+  right: 16.5rem;
+}
+
+.movie,
+.upcoming {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 3rem;
+}
+
+.movie__item,
+.upcoming__item {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.movie__item:hover,
+.upcoming__item:hover {
+  transform: translateY(-0.75%);
+}
+
+.movie__item-img img,
+.upcoming__item-img img {
+  width: 100%;
+  height: auto;
+}
+
+.movie__item-content,
+.upcoming__item-content {
+  padding: 2rem 1rem;
+}
+
+.movie__item-content h3,
+.upcoming__item-content h3 {
+  text-align: center;
+}
+
+.movie__item-content div,
+.upcoming__item-content div {
+  background-color: #b6142c;
+  width: 40%;
+  padding: 0.5rem 0;
+  border-radius: 0.3rem;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.movie__item-content a,
+.upcoming__item-content a {
+  color: #fbfbfb;
+  text-decoration: none;
+}

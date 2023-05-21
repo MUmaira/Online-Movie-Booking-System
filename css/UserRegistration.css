@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+/*---body---*/
+body {
+  height: 100%;
+  background-image: url("../images/bg2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #161f28;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: #fbfbfb;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*---Form container---*/
+
+.heading {
+  font-size: 40px;
+  text-align: center;
+}
+
+.form-container {
+  margin: 30px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fbfbfb;
+}
+
+.form {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.form-container label {
+  color: #fbfbfb;
+  padding: 10px;
+  font-size: 18px;
+}
+
+span {
+  color: #b6142c;
+}
+
+/*---Input fields---*/
+
+input {
+  width: 90%;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 8px;
+  border: 2px solid #ccc;
+  margin-bottom: 20px;
+  background-color: #e3dfdf;
+  font-size: 16px;
+  color: #161f28;
+}
+
+input:focus {
+  outline: none !important;
+  border: 1px solid #719ece;
+  box-shadow: 0 0 10px #719ece;
+}
+
+input[type="checkbox"],
+input.checkbox {
+  float: left;
+  clear: none;
+  margin: 2px 4px 0 2px;
+  width: 4% !important;
+}
+
+.TC {
+  float: left;
+  clear: none;
+  display: block;
+  padding: 0px 1em 0px 8px;
+}
+
+.agreeTC {
+  padding-left: 10px;
+}
+
+.submit {
+  text-align: center;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fbfbfb;
+}
+
+.submitBtn {
+  color: #fbfbfb;
+  background-color: #b6142c;
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-top: 30px;
+  padding: 10px;
+  transition: all 0.5s ease;
+}
+
+.submitBtn:hover {
+  cursor: pointer;
+  background-color: #ff0000;
+}
+
+/*---Responsive Styling---*/
+
+@media screen and (max-width: 850px) {
+  .heading {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  input {
+    width: 80%;
+  }
+
+  .form-container {
+    max-width: 400px;
+  }
+
+  .heading {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  input {
+    padding: 6px;
+    font-size: 12px;
+  }
+  .form-container label {
+    font-size: 14px;
+  }
+
+  .form-container {
+    max-width: 350px;
+    font-size: 12px;
+  }
+
+  .submitBtn {
+    font-size: 16px;
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .form-container {
+    max-width: 300px;
+  }
+
+  input {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .form-container {
+    max-width: 250px;
+  }
+
+  input {
+    padding: 4px;
+    width: 80%;
+  }
+}

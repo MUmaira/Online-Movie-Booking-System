@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #161f28;
+  color: #fbfbfb;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  margin-top: 3rem;
+}
+
+.reserve {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.reserve__select-item {
+  padding: 2rem 4rem;
+}
+
+.reserve__select-item select,
+.reserve__select-item input {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.reserve__select-item label {
+  font-size: 1rem;
+}
+
+.section-devider {
+  background-color: #fbfbfb;
+  height: 0.1rem;
+  width: 100%;
+  margin: 3rem 0;
+}
+
+button.reserve-btn {
+  background-color: #b6142c;
+  color: #fbfbfb;
+  padding: 0.5rem 1rem;
+  margin: 2rem auto;
+  border-radius: 0.4rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+}

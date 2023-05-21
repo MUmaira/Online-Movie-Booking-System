@@ -1,0 +1,114 @@
+.Input-container , .ticket-container{
+    min-height: 120vh;
+    display: flex;
+    justify-content:center;
+    flex-flow: column;
+    padding-bottom: 60px;
+    background-color: #161f28;
+    color:#161f28;
+    
+}
+
+.Input-container form{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px #161f28;
+    padding:20px;
+    width: 600px;
+    margin-top:10px;
+    margin-left: 200px;
+    padding-top: 20px;
+}
+
+.Input-container form .inputBox{
+    margin-top: 20px;
+}
+
+.Input-container form .inputBox span{
+    display: block;
+    color:#161f28;
+    padding-bottom: 5px;
+}
+
+
+
+.Input-container form .flexbox{
+    display: flex;
+    gap: 15px;
+}
+
+.Input-container form .flexbox .inputBox{
+    flex: 1 1 150px;
+    border: 1px solid #161f28;
+}
+
+.Input-container form .submit-btn{
+    width: 100%;
+    background:linear-gradient(45deg, #161f28, #b6142c);
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50px 20px;
+    color:#fff;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.Input-container form .submit-btn:hover{
+    letter-spacing: 2px;
+    opacity:0.8;
+}
+
+.image {
+    display: block;
+    overflow: hidden;
+    margin-left: 40px;
+}
+
+.ticket-container{
+    
+    min-height: 60vh;
+    margin-left: 850px;
+    position: absolute;
+    width: 25%;
+    margin-right: 80px;
+    background-color:#fbfbfb;
+    border-radius: 5px;
+}
+
+.ticket-container{
+  
+    padding-bottom: 60px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.ticket-container h2 {
+    text-align: center;
+}
+
+.name, .phone, .email {
+    display:flex;
+    padding : 10px;
+}
+           
+.customer-name-input{
+  border: 1px solid #161f28;
+  border-width:30%;
+}
+
+.customer-mobile-input{
+  border: 1px solid #161f28;
+  border-width:30%;
+}
+
+.customer-email-input{
+  border: 1px solid #161f28;
+  border-width:30%;
+}
+
+
+
+
+
+
