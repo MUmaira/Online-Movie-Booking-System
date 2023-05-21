@@ -14,7 +14,7 @@
 >   3. Display Theatre Details
 >   4. Add Movies
 >   5. Display Movie Details
->   6.Update Movie Details
->   7.Delete Movie Details
+>   6. Update Movie Details
+>   7. Delete Movie Details
 > - Developed Terms and Conditions and Privacy Policoes Page (Non - Dynamic)
 
