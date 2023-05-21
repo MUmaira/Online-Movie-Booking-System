@@ -1,3 +1,4 @@
+<!-- IT21260988 - Randeniya R. A. D. S. E -->
 <?php
 session_start();
 require 'config.php';
@@ -103,7 +104,7 @@ require 'config.php';
     echo "    <div class='user-info-1'>";
     echo "        <img class='user' src='../images/user.png'>";
     echo "        <h2 class='username'>" . $fname . " " . $lname . "</h2>";
-
+    
     echo "        <h4> <a href='UpdateProfile.php'>Update Profile<i class='fa-solid fa-pen'></i></a></h4>";
     echo "        <button class='button logout'><a href='logout.php'>Logout</a></button>";
     echo "    </div>";
@@ -120,7 +121,7 @@ require 'config.php';
 
     ?>
 
-
+    
     <!--Divider-->
     <div class="divider"></div>
 
@@ -129,41 +130,41 @@ require 'config.php';
         <h1>Purchased Movies</h1>
         <div class="purchased-movie-details">
 
+                
+                <?php
+                //sql query to select all values from Booking table
+                $sql = "SELECT * FROM Booking WHERE CID = $uid";
 
-            <?php
-            //sql query to select all values from Booking table
-            $sql = "SELECT * FROM Booking WHERE CID = $uid";
+                ////perform the query
+                $result = $connection->query($sql);
 
-            ////perform the query
-            $result = $connection->query($sql);
+                //check if there is a result row
+                if ($result->num_rows > 0) {
 
-            //check if there is a result row
-            if ($result->num_rows > 0) {
-
-                //fetch the result row as an associative array
-                while ($row = $result->fetch_assoc()) {
-                    //echo the details            
-                    echo "<table>";
-                    echo "    <tr>";
-                    echo "       <th>Movie</th>";
-                    echo "       <th>Theatre</th>";
-                    echo "       <th>Number Of Tickets</th>";
-                    echo "       <th >Booked Date and Time</th>";
-                    echo "       <th>Price (Rs.)</th>";
-                    echo "    </tr>";
-                    echo "<tr>";
-                    echo "  <td>" . $row['B_Movie'] . "</td>";
-                    echo "  <td>" . $row['B_theatre'] . "</td>";
-                    echo "  <td>" . $row['NumberOfTickets'] . "</td>";
-                    echo "  <td>" . $row['B_Date'] . " at " . $row['B_Time'] . "</td>";
-                    echo "  <td>" . $row['Price'] . "</td>";
-                    echo "</tr>";
-                    echo "</table>";
+                    //fetch the result row as an associative array
+                    while ($row = $result->fetch_assoc()) {
+                        //echo the details            
+                        echo"<table>";
+                        echo"    <tr>";
+                        echo"       <th>Movie</th>" ;
+                        echo"       <th>Theatre</th>" ;
+                        echo"       <th>Number Of Tickets</th>" ;
+                        echo"       <th >Booked Date and Time</th>" ;
+                        echo"       <th>Price (Rs.)</th>" ;
+                        echo"    </tr>";
+                        echo "<tr>";
+                        echo "  <td>".$row['B_Movie']."</td>";
+                        echo "  <td>".$row['B_theatre']."</td>";
+                        echo "  <td>".$row['NumberOfTickets']."</td>";
+                        echo "  <td>".$row['B_Date']." at ".$row['B_Time']."</td>";
+                        echo "  <td>".$row['Price']."</td>";
+                        echo "</tr>";
+                        echo"</table>";
+                    }
+                }else { // if there is no result row
+                    echo "<p class='no-purchased'>You haven't purchased any movies</p>";
                 }
-            } else { // if there is no result row
-                echo "<p class='no-purchased'>You haven't purchased any movies</p>";
-            }
-            ?>
+                ?>
 
         </div>
     </section>
@@ -193,7 +194,7 @@ require 'config.php';
 
                         //echo the details
                         echo "<div class='img-wrap'>";
-                        echo "    <img class='movie-image' src=" . $row['M_img'] . " alt=''>";
+                        echo "    <img class='movie-image' src=".$row['M_img']." alt=''>";
                         echo "    <p class='img-text'>" . $row['M_name'] . "</p>";
                         echo "</div>";
                         $i--;
@@ -201,7 +202,7 @@ require 'config.php';
                 }
                 ?>
             </div>
-            <div class="btn-container"><button class="see-more-recommended-movies-btn"><a href="movies.php">See More</a></button></div>
+            <div class="btn-container"><button class="see-more-recommended-movies-btn">See More</button></div>
 
         </div>
     </section>
@@ -211,7 +212,7 @@ require 'config.php';
 
     <!-------------------------------------------------------------------------------------------------------------------------------->
 
-    <!--Footer-->
+        <!--Footer-->
     <footer class="footer">
         <div class="footer__content">
             <div class="footer__content-company">
@@ -265,7 +266,6 @@ require 'config.php';
     <script src="../js/index.js"></script>
 
 </body>
-
 </html>
 
 

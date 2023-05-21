@@ -102,18 +102,12 @@ if (isset($_POST['deleteProfile'])) {
     //perform the queries and check if its successful
     if ($connection->query($sql) === TRUE) {
         //redirect user to registration page
-        session_start();
-        session_unset();
-        session_destroy();
         header('Location: UserRegistration.php');
     } else {
         echo "error";
     }
     if ($connection->query($sqlUA) === TRUE) {
         //redirect user to registration page
-        session_start();
-        session_unset();
-        session_destroy();
         header('Location: UserRegistration.php');
     } else {
         echo "error";

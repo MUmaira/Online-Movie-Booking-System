@@ -1,3 +1,5 @@
+//IT21260988 - Randeniya R. A. D. S. E
+
 const password = document.querySelector(".password");
 const confirmPassword = document.querySelector(".confirmPassword");
 

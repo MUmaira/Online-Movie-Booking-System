@@ -1,3 +1,6 @@
+<!-- IT21260988 - Randeniya R. A. D. S. E -->
+
+
 <?php
 //configuration file
 require 'config.php';
@@ -42,7 +45,7 @@ require 'config.php';
         <nav class="header__nav">
             <li><a href="index.php">Home</a></li>
             <li><a href="movies.php">Movies</a></li>
-            <li><a href="about us page.php">About Us</a></li>
+            <li><a href="aboutUs.php">About Us</a></li>
             <li><a href="../html/ContactUs.html">Contact Us</a></li>
             <div class="header__nav-closemenu">
                 <i class="fa-solid fa-xmark"></i>
@@ -61,19 +64,19 @@ require 'config.php';
 
             <!--Taking user details. Required attribute is added to make sure guest user fills all fields in the form-->
             <label for="">First Name: <span>*</span> </label> <br>
-            <input type="text" class="firstName" name="firstName" placeholder="First Name" required maxlength="10"> <br>
+            <input type="text" class="firstName" name="firstName" placeholder="First Name" required maxlength="10" > <br>
             <label for="">Last Name: <span>*</span> </label><br>
-            <input type="text" class="lastName" name="lastName" placeholder="Last Name" maxlength="10" required><br>
+            <input type="text" class="lastName" name="lastName" placeholder="Last Name" maxlength="10" required ><br>
             <label for="">Date of Birth: <span>*</span> </label><br>
-            <input type="text" class="dob" name="dob" placeholder="YY-MM-DD" required><br>
+            <input type="text" class="dob" name="dob" placeholder="YY-MM-DD" required ><br>
             <label for="">NIC: <span>*</span> </label><br>
-            <input type="text" class="NIC" name="NIC" placeholder="NIC" required maxlength="10"><br>
+            <input type="text" class="NIC" name="NIC" placeholder="NIC" required maxlength="10" ><br>
             <label for="">Address: <span>*</span> </label><br>
-            <input type="text" class="address" name="address" placeholder="Address" required maxlength="60"><br>
+            <input type="text" class="address" name="address" placeholder="Address" required maxlength="60" ><br>
             <label for="">Contact Number: <span>*</span> </label><br>
-            <input type="text" class="phoneNumber" name="phoneNumber" placeholder="Phone Number" required><br>
+            <input type="text" class="phoneNumber" name="phoneNumber" placeholder="Phone Number" required ><br>
             <label for="">Email: <span>*</span> </label><br>
-            <input type="email" class="email" name="email" id="email" placeholder="Email Address" required><br>
+            <input type="email" class="email" name="email" id="email" placeholder="Email Address" required ><br>
             <label for="">Password: <span>*</span> </label><br>
             <input type="password" class="password" name="password" id="" placeholder="Password" minlength="8" maxlength="10" required><br>
             <label for="">Confirm Password: <span>*</span> </label><br>
@@ -90,7 +93,7 @@ require 'config.php';
 
     <!-------------------------------------------------------------------------------------------------------------------------------->
 
-    <!--Footer-->
+        <!--Footer-->
     <footer class="footer">
         <div class="footer__content">
             <div class="footer__content-company">

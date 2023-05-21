@@ -1,0 +1,52 @@
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem auto;
+}
+
+.billing-form {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  width: 50%;
+  margin-top: 2rem;
+}
+
+input {
+  margin: 1.5rem;
+  height: 40px;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.billingUpdate-form .update {
+  width: 40%;
+  background: linear-gradient(45deg, #161f28, #b6142c);
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 50px 20px;
+  color: #fbfbfb;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.billingUpdate-form .update {
+  width: 40%;
+  background: linear-gradient(45deg, #161f28, #b6142c);
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 50px 20px;
+  color: #fbfbfb;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+l .billingUpdate-form .update:hover {
+  letter-spacing: 2px;
+  opacity: 0.8;
+}

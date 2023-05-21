@@ -1,0 +1,42 @@
+table{
+	align:center;
+	border: 1px  ;
+	border-collapse: collapse;
+	background-color: #333333;
+}
+
+th, td{
+	color:#fbfbfb;
+	text-align: center;
+	padding: 10px;
+}
+
+.button2 {
+	background:#b6142c;
+	padding: 2px 5px;
+	text-align: center;
+	color: #fbfbfb;
+	cursor: pointer;
+	border-radius:4px;
+}
+
+.button2:hover{
+	background-color:#A9A9A9;
+}
+
+.button3 {
+	background:#8B8000;
+	padding: 2px 5px;
+	text-align: center;
+	color: #fbfbfb;
+	cursor: pointer;
+	border-radius:4px;
+}
+
+.button3:hover{
+	background-color:#A9A9A9;
+}
+
+a:link{
+	color:#fbfbfb;
+}

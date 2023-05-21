@@ -1,3 +1,5 @@
+<!--  IT21260988 - Randeniya R. A. D. S. E  -->
+
 <?php
 include 'config.php';
 ?>
@@ -18,7 +20,7 @@ include 'config.php';
 
     <!-------------------------------------------------------------------------------------------------------------------------------->
 
-    <!--Header-->
+     <!--Header-->
     <header class="header">
         <div class="header__top">
             <div class="header__top-logo">
@@ -74,14 +76,14 @@ include 'config.php';
             <div class="change-password">
                 <label for="">Current Password:</label><br>
                 <input class="password" type="text" name="password"><br>
-                <?php
-                //check if the global variable is set
-                if (isset($_GET['error']) and $_GET['error'] = 'incorrectPwd') {
-
-                    $error = 'Incorrect Passowrd';
-                    echo "<p class='error'>$error</p>";
-                }
-                ?>
+            <?php
+            //check if the global variable is set
+            if(isset($_GET['error']) and $_GET['error'] = 'incorrectPwd'){
+                
+                $error = 'Incorrect Passowrd';
+                echo "<p class='error'>$error</p>";
+            }
+            ?>
                 <label for="">New Password:</label><br>
                 <input class="newPassword" type="text" name="newPassword"><br>
                 <label for="">Confirm Password</label><br>

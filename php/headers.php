@@ -1,0 +1,27 @@
+    <!--Header-->
+    <header class="header">
+      <div class="header__top">
+        <div class="header__top-logo">
+          <a href="#"><img src="../images/logo.jpg" alt="logo" /></a>
+        </div>
+
+        <div class="header__top-user">
+          <a href="#">Buy tickets</a>
+          <i class="fa fa-user"></i>
+        </div>
+
+        <div class="header__top-menuopen">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <nav class="header__nav">
+        <li><a href="index.php">Home</a></li>
+        <li><a href="movies.php">Movies</a></li>
+        <li><a href="about us page.php">About Us</a></li>
+        <li><a href="../html/ContactUs.html">Contact Us</a></li>
+        <div class="header__nav-closemenu">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </nav>
+    </header>

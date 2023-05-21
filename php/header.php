@@ -1,10 +1,3 @@
-  <?php
-  if (!isset($_SESSION)) {
-    session_start();
-  }
-  include 'config.php';
-  ?>
-
   <body>
     <!--Header-->
     <header class="header">
@@ -15,14 +8,7 @@
 
         <div class="header__top-user">
           <a href="reserve-seat.php">Buy tickets</a>
-          <?php
-          if (isset($_SESSION['uid'])) {
-            echo "<a href='UserDashboard.php'><i class='fa fa-user'></i></a>";
-          } else {
-            echo "<a href='UserRegistration.php'><i class='fa fa-user'></i></a>";
-          }
-          ?>
-
+          <a href="UserRegistration.php"><i class="fa fa-user"></i></a>
         </div>
 
         <div class="header__top-menuopen">
